@@ -1,5 +1,6 @@
 // console.log('We are in client side JavaScript');
 
+
 // fetch('http://localhost:3000/weather?address=junagadh').then(function(response){
 //     response.json().then(function(data){
 //         if(data.error){
