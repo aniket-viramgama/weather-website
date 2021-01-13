@@ -97,6 +97,9 @@ app.get('*' , function(req,res){            // wildCard jaisa h *
     res.send('My 404 page !!');
 })                                             // isko last mei h rakhna pdega
 
-app.listen(3000 , function(){
-    console.log('Server running at port 3000 ..')
+
+const port = process.env.PORT || 3000;          // heroku will give us a port in environment
+
+app.listen(port , function(){
+    console.log('Server running at port '+ port);
 });

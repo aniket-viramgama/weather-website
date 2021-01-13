@@ -28,7 +28,7 @@ weatherForm.addEventListener('submit', function(event){
     msg1.textContent = 'Loading...'
     msg2.textContent = ''
 
-    fetch('http://localhost:3000/weather?address=' + addressIp).then(function(response){
+    fetch('/weather?address=' + addressIp).then(function(response){             // last mei heroku ke liye change kiya
     response.json().then(function(data){
         if(data.error){
             // console.log(data.error);
