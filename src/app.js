@@ -30,7 +30,7 @@ app.use(express.static(PublicPath));
 //     res.send('<h1>weather</h1>')
 //   })
    
-  const viewPath = path.join('C:/Users/Bipi/Desktop/NodeJsMOOC/web-server/kuchBhi/views')
+  const viewPath = path.join(__dirname , '../kuchBhi/views')
   app.set('view engine' , 'hbs')
   app.set('views', viewPath)
 
