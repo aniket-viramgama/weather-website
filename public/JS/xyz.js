@@ -34,6 +34,7 @@ weatherForm.addEventListener('submit', function(event){
             // console.log(data.error);
             msg1.textContent = data.error
         }
+        
         else{
             // console.log(data.Location);
             // console.log(data.Temperature);
