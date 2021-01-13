@@ -5,6 +5,8 @@ const path = require('path');
 const hbs = require('hbs');
 
 const app = express();
+const port = process.env.PORT || 3000;          // heroku will give us a port in environment
+
 const PublicPath = path.join(__dirname , '../public')
 
 app.use(express.static(PublicPath));
@@ -98,7 +100,6 @@ app.get('*' , function(req,res){            // wildCard jaisa h *
 })                                             // isko last mei h rakhna pdega
 
 
-const port = process.env.PORT || 3000;          // heroku will give us a port in environment
 
 app.listen(port , function(){
     console.log('Server running at port '+ port);
